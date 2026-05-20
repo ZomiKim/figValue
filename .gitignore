@@ -1,0 +1,17 @@
+firebase_key.json
+zomienv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+logs/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+frontend/node_modules/
+frontend/.next/
+frontend/.env
+frontend/.env*.local

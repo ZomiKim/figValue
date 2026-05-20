@@ -1,0 +1,5 @@
+selenium
+firebase-admin
+webdriver-manager
+fastapi
+uvicorn[standard]
