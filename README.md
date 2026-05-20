@@ -80,6 +80,3 @@ firebase_config.py
 requirements.txt
 ```
 
-## 📄 라이선스
-
-저장소에 라이선스 파일이 없다면, 배포 전에 라이선스를 명시하는 것을 권장합니다.
