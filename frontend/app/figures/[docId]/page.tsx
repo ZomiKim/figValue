@@ -1,10 +1,12 @@
 import { FigureDetail } from "@/components/FigureDetail";
 
-type PageProps = {
-  params: Promise<{ docId: string }>;
-};
-
-export default async function FigurePage({ params }: PageProps) {
+export default async function FigurePage({
+  params,
+}: PageProps<"/figures/[docId]">) {
   const { docId } = await params;
-  return <FigureDetail docId={decodeURIComponent(docId)} />;
+  return (
+    <main className="mx-auto min-h-screen w-[90%] max-w-5xl py-10">
+      <FigureDetail docId={decodeURIComponent(docId)} />
+    </main>
+  );
 }

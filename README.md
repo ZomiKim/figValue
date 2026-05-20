@@ -13,6 +13,10 @@
 - 결과를 **Firebase Firestore**에 저장하고, 날짜별 **히스토리**로 쌓아 두어 추이 확인 가능 (API·프론트 연동)
 - **FastAPI** REST API, **Next.js** 웹 UI
 
+## 🌐 사이트 바로가기
+
+[![figValue 사이트 바로가기](https://img.shields.io/badge/figValue-%EC%82%AC%EC%9D%B4%ED%8A%B8_%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fig-value.vercel.app/)
+
 ## 🛠️ 기술 스택
 
 **백엔드**  
@@ -22,7 +26,7 @@
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 
 **스타일 · UI**  
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/> <img src="https://img.shields.io/badge/Recharts-8884d8?style=flat-square" alt="Recharts"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/> <img src="https://img.shields.io/badge/Recharts-8884d8?style=flat-square" alt="Recharts"/> <img src="https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white" alt="Chart.js"/>
 
 **데이터 수집**  
 <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium"/> <img src="https://img.shields.io/badge/webdriver--manager-333333?style=flat-square" alt="webdriver-manager"/>
@@ -32,6 +36,9 @@
 
 **품질 도구**  
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" alt="ESLint"/>
+
+**배포**  
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/> <img src="https://img.shields.io/badge/Render-000000?style=flat-square&logo=render&logoColor=white" alt="Render"/>
 
 ## 📋 사전 준비
 
