@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { FormEvent, useCallback, useEffect, useState } from "react";
 
-import {
-  addBookmark,
-  fetchBookmarks,
-  removeBookmark,
-} from "@/lib/api";
+import { addBookmark, fetchBookmarks, removeBookmark } from "@/lib/api";
 import { keywordToDocId } from "@/lib/keyword";
 
 export function BookmarkSection() {
@@ -65,7 +61,7 @@ export function BookmarkSection() {
   }
 
   return (
-    <section className="space-y-4">
+    <section className="space-y-4 px-4">
       <h2 className="text-lg font-semibold text-zinc-900">북마크</h2>
 
       <form onSubmit={handleAdd} className="flex gap-2">
@@ -85,9 +81,7 @@ export function BookmarkSection() {
         </button>
       </form>
 
-      {error && (
-        <p className="text-sm text-red-600">{error}</p>
-      )}
+      {error && <p className="text-sm text-red-600">{error}</p>}
 
       {loading ? (
         <p className="text-sm text-zinc-500">불러오는 중…</p>
