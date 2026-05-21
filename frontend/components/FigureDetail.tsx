@@ -5,11 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { PriceChart } from "@/components/PriceChart";
 import { QueryButton } from "@/components/QueryButton";
-import {
-  fetchFigureHistory,
-  fetchFigureLatest,
-  formatWon,
-} from "@/lib/api";
+import { fetchFigureHistory, fetchFigureLatest, formatWon } from "@/lib/api";
 import { docIdToDisplay } from "@/lib/keyword";
 import type { FigureLatest, HistoryPoint } from "@/lib/types";
 
@@ -48,9 +44,20 @@ export function FigureDetail({ docId }: Props) {
 
   return (
     <article className="space-y-8">
-      <header className="space-y-2">
-        <Link href="/" className="text-sm text-zinc-500 hover:underline">
-          ← 홈
+      <header className="flex flex-col items-center space-y-2">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-[20px]  bg-pink-300 px-3 py-2 transition-colors hover:bg-pink-400"
+          aria-label="홈으로 가기"
+        >
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white">
+            <img
+              src="/homeIcon.png"
+              alt=""
+              className="h-5 w-5 object-contain"
+            />
+          </span>
+          <span className="text-sm font-semibold text-white">홈으로 가기</span>
         </Link>
         <h1 className="text-2xl font-semibold text-zinc-900">{displayName}</h1>
         {latest && (
@@ -58,9 +65,8 @@ export function FigureDetail({ docId }: Props) {
             최신 총 평균: {formatWon(latest.total_avg_price)}
           </p>
         )}
+        <QueryButton keyword={displayName} onSuccess={load} />
       </header>
-
-      <QueryButton keyword={displayName} onSuccess={load} />
 
       {loading && <p className="text-sm text-zinc-500">데이터 불러오는 중…</p>}
       {error && (
@@ -86,7 +92,9 @@ export function FigureDetail({ docId }: Props) {
                     className="rounded-lg border border-zinc-200 px-4 py-3 text-sm"
                   >
                     <p className="font-medium capitalize">{name}</p>
-                    <p>{stats.count}건 · {formatWon(stats.avg_price)}</p>
+                    <p>
+                      {stats.count}건 · {formatWon(stats.avg_price)}
+                    </p>
                   </li>
                 ))}
               </ul>

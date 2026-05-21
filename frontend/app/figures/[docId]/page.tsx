@@ -5,7 +5,7 @@ export default async function FigurePage({
 }: PageProps<"/figures/[docId]">) {
   const { docId } = await params;
   return (
-    <main className="mx-auto min-h-screen w-[90%] max-w-5xl py-10">
+    <main className="mx-auto w-[90%] max-w-5xl py-10">
       <FigureDetail docId={decodeURIComponent(docId)} />
     </main>
   );

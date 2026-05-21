@@ -27,10 +27,22 @@ ChartJS.register(
 );
 
 const COLORS = {
-  total: { stroke: "#18181b", fill: "rgba(24, 24, 27, 0.08)" },
-  bunjang: { stroke: "#ea580c", fill: "rgba(234, 88, 12, 0.06)" },
-  joongna: { stroke: "#2563eb", fill: "rgba(37, 99, 235, 0.06)" },
-  carrot: { stroke: "#16a34a", fill: "rgba(22, 163, 74, 0.06)" },
+  total: {
+    stroke: "#B79CFF", // 라벤더
+    fill: "rgba(183, 156, 255, 0.15)",
+  },
+  bunjang: {
+    stroke: "#FF8FC7", // 핑크
+    fill: "rgba(255, 143, 199, 0.15)",
+  },
+  joongna: {
+    stroke: "#98E5C1", // 민트
+    fill: "rgba(152, 229, 193, 0.15)",
+  },
+  carrot: {
+    stroke: "#FFC78A", // 오렌지
+    fill: "rgba(255, 199, 138, 0.15)",
+  },
 };
 
 type Props = {
