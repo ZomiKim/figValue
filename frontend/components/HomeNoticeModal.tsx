@@ -2,8 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-const MESSAGE =
-  "개인의 포트폴리오입니다. 파이어베이스 용량이 부족하니 너무 많은 검색을 자제해주시면 감사하겠습니다ㅠㅠ";
+const MESSAGE = `
+개인의 포트폴리오입니다.
+파이어베이스 용량이 부족하니 너무 많은 검색을 자제해주시면 감사하겠습니다ㅠㅠ
+
+🛠️  아직 공사중입니다  🛠️
+`;
 
 /** 새로고침 시 모듈이 다시 로드되어 초기화됨. 클라이언트 라우팅으로 홈 복귀 시에는 유지됨. */
 let homeNoticeShownThisPageLoad = false;
