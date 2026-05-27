@@ -51,7 +51,7 @@ export function HomeNoticeModal() {
         >
           안내
         </h2>
-        <p className="text-center text-sm leading-relaxed text-gray-600">
+        <p className="whitespace-pre-line text-center text-sm leading-relaxed text-gray-600">
           {MESSAGE}
         </p>
         <button
